@@ -27,7 +27,7 @@ app.use(express.static(__dirname + '/public'))
 
 
 // Login page
-// http://localhost:300/
+// http://localhost:3000/
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'))
 })
@@ -37,7 +37,7 @@ app.get('/register', (req, res) => {
 })
 
 // Login Authentication
-// http://localhost:300/auth
+// http://localhost:3000/auth
 app.post('/auth', (req, res) => {
     let username = req.body.username
     let password = req.body.password
